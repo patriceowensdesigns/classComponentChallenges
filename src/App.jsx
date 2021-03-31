@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import Main from './components/Main'
-import CatIndex from './components/Cats/CatIndex'
-import DogIndex from './components/Dogs/DogIndex'
+// import CatIndex from './components/Cats/CatIndex'
+// import DogIndex from './components/Dogs/DogIndex'
 
 function App() {
   
@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <h1>App.jsx</h1>
       <Main />
-      <CatIndex />
+      {/* <CatIndex />
       <hr />
-      <DogIndex />
+      <DogIndex /> */}
     </div>
   )
 }

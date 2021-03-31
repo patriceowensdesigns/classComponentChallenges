@@ -4,7 +4,7 @@ export default class DogIndex extends Component {
     constructor (props) {
         super(props)
         this.state = {
-            url: ''
+            url: '',
         }
         this.fetchDog = this.fetchDog.bind(this)
         this.handleClick = this.handleClick.bind(this)
@@ -29,16 +29,11 @@ export default class DogIndex extends Component {
         this.fetchDog()
     }
 
-    componentWillUnmount () {
-        console.log('DogFetcher component *will* unmount!')
-        clearUrl(this.state.url)
-    }
-
     render(){
     return(
         <div>
             <h1>DogIndex</h1>
-            <img src={this.state.url} />
+            <img src={this.state.url} width="600 px" height= "500 px"/>
             <button onClick={this.handleClick}>Get Doggie!</button>
         </div>
         );
